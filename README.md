@@ -1,20 +1,42 @@
-Cara menjalankan project EnerGum:
+🌿 EnerGum – Smart Recommendation System
 
-1. Jalankan ML service:
-   ``cd ml_service``
-   ``python -m venv .venv``
-   ``.\.venv\Scripts\Activate.ps1 (Windows)``
-   `` pip install -r requirements.txt``
-   ``python train_tf.py``
-   ``uvicorn app:app --reload --port 8000``
-   
-3. Jalankan backend:
-   ``cd backend``
-   ``npm install``
-   ``node server.js``
-   
-5. Jalankan frontend:
-   ``npm install``
-   ``npm run dev``
+EnerGum adalah aplikasi berbasis web yang mengintegrasikan Machine Learning, Backend, dan Frontend untuk memberikan rekomendasi cerdas berbasis data.
 
-api swagger http://127.0.0.1:8000/docs
+🚀 Cara Menjalankan Project
+
+Ikuti langkah-langkah berikut untuk menjalankan seluruh sistem secara lokal:
+
+🧠 1. Menjalankan ML Service
+cd ml_service
+python -m venv .venv
+
+Aktivasi virtual environment (Windows):
+
+.\.venv\Scripts\Activate.ps1
+
+Install dependency:
+
+pip install -r requirements.txt
+
+Training model:
+
+python train_tf.py
+
+Menjalankan API:
+
+uvicorn app:app --reload --port 8000
+
+📌 API Documentation (Swagger):
+👉 http://127.0.0.1:8000/docs
+
+⚙️ 2. Menjalankan Backend
+cd backend
+npm install
+node server.js
+💻 3. Menjalankan Frontend
+npm install
+npm run dev
+🧩 Arsitektur Project
+🧠 ML Service → Model Machine Learning (TensorFlow / FastAPI)
+⚙️ Backend → API & logic server (Node.js)
+💻 Frontend → Tampilan user (React / Vite)
