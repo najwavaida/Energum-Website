@@ -69,16 +69,6 @@ npm run dev
 
 ---
 
-## ⚠️ Catatan Penting
-
-- Pastikan **Python & Node.js** sudah terinstall  
-- Jangan upload file sensitif seperti:
-  - `.env`
-  - `.json credentials`
-  - `.venv`
-- Gunakan `.gitignore` untuk menjaga keamanan project  
-
----
 
 ## ✨ Tips
 
