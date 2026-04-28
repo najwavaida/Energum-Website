@@ -1,0 +1,253 @@
+/* Fonts loaded via index.html for better performance */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 96%;
+    --foreground: 25 50% 15%;
+
+    --card: 35 35% 94%;
+    --card-foreground: 25 50% 15%;
+
+    --popover: 35 30% 96%;
+    --popover-foreground: 25 50% 15%;
+
+    --primary: 25 55% 35%;
+    --primary-foreground: 35 40% 95%;
+
+    --secondary: 35 45% 88%;
+    --secondary-foreground: 25 55% 25%;
+
+    --muted: 35 25% 90%;
+    --muted-foreground: 25 20% 45%;
+
+    --accent: 30 60% 45%;
+    --accent-foreground: 35 40% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 30% 82%;
+    --input: 30 30% 82%;
+    --ring: 25 55% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom EnerGum colors */
+    --energum-brown: 25 55% 35%;
+    --energum-brown-light: 30 45% 50%;
+    --energum-cream: 35 40% 92%;
+    --energum-beige: 35 35% 85%;
+    --energum-gold: 40 70% 55%;
+    --energum-cashew: 35 50% 75%;
+    --energum-peanut: 25 60% 45%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(35 40% 92%) 0%, hsl(30 35% 88%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(35 35% 94%) 0%, hsl(35 30% 90%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(25 55% 35%) 0%, hsl(30 60% 45%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(40 70% 55%) 0%, hsl(35 65% 50%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 55% 35% / 0.15);
+    --shadow-medium: 0 8px 30px -6px hsl(25 55% 35% / 0.2);
+    --shadow-glow: 0 0 40px hsl(40 70% 55% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Footer - Dark theme */
+    --footer-background: 20 30% 12%;
+    --footer-foreground: 35 30% 92%;
+    --footer-muted: 35 20% 60%;
+    --footer-accent: 40 70% 55%;
+    --footer-border: 20 20% 20%;
+  }
+
+  .dark {
+    --background: 25 30% 8%;
+    --foreground: 35 30% 92%;
+
+    --card: 25 25% 12%;
+    --card-foreground: 35 30% 92%;
+
+    --popover: 25 25% 12%;
+    --popover-foreground: 35 30% 92%;
+
+    --primary: 35 50% 65%;
+    --primary-foreground: 25 30% 10%;
+
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 35 30% 85%;
+
+    --muted: 25 15% 20%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 40 60% 55%;
+    --accent-foreground: 25 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 20% 22%;
+    --input: 25 20% 22%;
+    --ring: 35 50% 65%;
+
+    --energum-brown: 35 50% 65%;
+    --energum-brown-light: 35 45% 55%;
+    --energum-cream: 25 20% 18%;
+    --energum-beige: 25 15% 22%;
+    --energum-gold: 40 65% 50%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(25 30% 8%) 0%, hsl(25 25% 12%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(25 25% 12%) 0%, hsl(25 20% 15%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(35 50% 65%) 0%, hsl(40 60% 55%) 100%);
+
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 8px 30px -6px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(40 65% 50% / 0.2);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Footer - Even darker for dark mode */
+    --footer-background: 20 25% 6%;
+    --footer-foreground: 35 30% 90%;
+    --footer-muted: 35 15% 55%;
+    --footer-accent: 40 65% 50%;
+    --footer-border: 20 20% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  .font-body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background: var(--gradient-accent);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 3s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
+}
